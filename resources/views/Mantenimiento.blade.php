@@ -1,25 +1,85 @@
-@extends('plantilla')
+@extends('plantilla2')
 @section('titulo')
     Mantenimiento PC
-@endsection('titulo')
+@endsection
+@section('id-page')
+    <p class="id-page">@Mantenimientos</p>
+@endsection
+@section('pan')
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Servicios</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Mantenimiento</li>
+  </ol>
+</nav>
+@endsection
+@section('hero')
+ <div class="hero--bs">
+ <img class="img-fluid" src="imagenes/man.jpg"/>
+ </div>
+@endsection
 @section('section')
-<section class="contenedor section-div">
-    <ul class="breadcrumb">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Servicios</a></li>
-          <li>Mantenimiento</li>
-        </ul><br/>
-            <div class="contenedor-section-div">
-                <img class="imagen-about-use" src="imagenes/soporte.jpg"/>
-                <div class="contenido-textos">
-                    <center><h3 class="titulo">Mantenimiento</h3></center>
-                    <center>
-                        <p>
-                           El mantenimiento de computadoras es la práctica de mantener las computadoras en buen estado. Es posible que una computadora que contenga polvo y residuos acumulados no funcione correctamente. El polvo y los residuos se acumularán como resultado del enfriamiento por aire.
-                        </p>
-                    </center>
-                </div><br />
-            </div><br />
-    </section>
-    <footer>
-@endsection('section')
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-6">
+      <p class="parra-bs">
+        <b>El mantenimiento</b> de computadoras es la práctica de mantener las computadoras en buen estado. Es posible que una computadora que contenga polvo y residuos acumulados no funcione correctamente. El polvo y los residuos se acumularán como resultado del enfriamiento por aire.
+        Una máquina está diseñada para funcionar correctamente en cualquier momento. Pero de tanto en tanto necesita ciertas tareas de mantenimiento para que siga funcionando como el primer día y nos dure más. Con nuestra computadora ocurre lo mismo.
+        <br>
+        A todos nos gusta encender el ordenador y que la pantalla de inicio de sesión aparezca de inmediato. Introducimos usuario y contraseña, abrimos un par de programas y aparecen en pantalla en segundos. Así da gusto.
+      </p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6 img-bsa">
+        <img src="../Imagenes/falla.jpg" class="img-fluid" alt="..."><div class="ldiv"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    
+    <div class="row">
+    <div class="ldiv"></div>
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      Mas información
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <strong>Tareas mensuales de mantenimiento del PC</strong> Empezaremos por las tareas que deberíamos realizar cada mes, con independencia de que estemos de vacaciones, trabajando o estudiando. Si no las hacemos no pasa nada, nuestra computadora no estallará en mil pedazos.Pero dedicarle unos minutos a estas tareas (media hora como mucho si las sigues todas) hará que tu PC funcione mejor durante el mes.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      Vaciar la Papelera
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <strong>Vaciar la Papelera</strong> Depende de los muchos archivos que elimines pero lo deseable es vaciar la Papelera una vez al mes. Más que nada porque si la borras antes, tal vez eches en falta algún archivo que borraste antes de tiempo, en especial en tu PC de trabajo.
+                <br>Antes de vaciar la Papelera no está de más mirar el contenido por si hay algo de lo que te vas a arrepentir si eliminas definitivamente.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Eliminar temporales y cachés
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <strong>Eliminar temporales y cachés</strong> Bien con la herramienta de Windows llamada Liberador de espacio en disco o con herramientas de terceros como CCleaner, una vez al mes no está de más deshacernos de restos de programas y del propio sistema.
+                <br> Se trata de archivos temporales y carpetas generados al instalar o desinstalar programas y juegos o por el mero funcionamiento de Windows. Eliminarlos una vez al mes nos dará más espacio en disco y a larga aligerará el sistema.      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="ldiv"></div>
+</div>
+@endsection
