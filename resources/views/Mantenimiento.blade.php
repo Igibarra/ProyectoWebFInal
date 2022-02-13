@@ -82,4 +82,43 @@
 
     <div class="ldiv"></div>
 </div>
+<div class="hero--bs">
+ <img class="img-fluid" src="imagenes/man2.png"/>
+ </div>
+ <div class="hero-titulo">
+        <p >Tipos de mantenimiento</p>
+    </div>
+    <div class="container">
+   
+    <div class="row mar">
+        <div class="col-12 col-md-6 col-lg-6">
+            <p class="parrafos-bsr"><b>Mantenimiento Predictivo</b> 
+              Se trata de un tipo de mantenimiento que se realiza gracias al uso de herramientas de diagnóstico, con el propósito de detectar posibles fallos, e intentar evitarlas antes de que se produzcan. Este tipo de mantenimiento a veces requiere un pequeño corte de servicio pero favorece el rendimiento general del sistema y la predictibilidad de los servicios, además de ahorrar tiempo y dinero en resolver fallas que de otro modo pueden implicar pérdidas.
+              Sin embargo, muchas de las herramientas utilizadas se emplean de forma continua en el sistema, sin necesidad de que éste se detenga. Esto permite diagnosticar el estado del equipo, generando al mismo tiempo un archivo histórico del funcionamiento del mismo – log.
+              Se trata simplemente de tomar decisiones informadas para prevenir posibles complicaciones a futuro, ahorrando tiempo y dinero en el proceso.
+            </p>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../Imagenes/man3.jpg" alt="">
+        </div>
+    </div>
+    <div class="row mar">
+        <div class="col-12 col-md-6 col-lg-6">
+            <p class="parrafos-bsr"><b>Mantenimiento Preventivo</b>  Consiste en aplicar una serie de procedimientos y técnicas que ayudan a minimizar el riesgo de fallos de manera considerable, garantizando el funcionamiento durante más tiempo. En otras palabras, sirve para alargar la vida útil de los dispositivos.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../Imagenes/man4.jpg" alt="">
+        </div>
+    </div>
+    <div class="row mar">
+        <div class="col-12 col-md-6 col-lg-6">
+            <p class="parrafos-bsr"><b>Mantenimiento Correctivo</b> Se trata de la solución que deberá aplicarse cuando el mantenimiento predictivo y el preventivo no hayan podido advertir o prevenir un fallo, y éste se produce. Se trata de la reparación o reemplazo del componente del sistema que no funcione.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../Imagenes/man5.jpg" alt="">
+        </div>
+    </div>
+    
+    </div>
 @endsection

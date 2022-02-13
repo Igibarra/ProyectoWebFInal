@@ -1,57 +1,80 @@
-@extends('plantilla')
+@extends('plantilla2')
 @section('titulo')
-    Cambio de Componentes
-@endsection('titulo')
+   Componentes
+@endsection
+@section('id-page')
+    <p class="id-page">@Componentes</p>
+@endsection
+@section('pan')
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Servicios</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Componentes</li>
+  </ol>
+</nav>
+@endsection
 @section('section')
-<section class="contenedor section-div">
-    <ul class="breadcrumb">
-          <li><a href="/">Home</a></li>
-          <li><a href="servicios">Servicios</a></li>
-          <li>Cambio de Componentes</li>
-        </ul><br/>
-        <h2 class="titulo">Cambios de Componentes</h2>   
-        <div class="contenedor-section-div">
-            <div class="contenido-textos">
-                <p>
-
-                    Se denomina hardware a todos los elementos tangibles de la computadora: procesador, monitor, teclado, tarjetas, circuitos integrados, cables, etc.
-
-                    El hardware de una computadora está compuesto por la unidad central, los dispositivos periféricos de entrada, de salida y de entrada/salida, así como por los cables, conexiones y puertos que permiten la interacción de todos ellos. Todos estos elementos en conjunto constituyen la arquitectura básica de la computadora.
-
-                    Los componentes de hardware básicos de una computadora son tres: unidad central de proceso o CPU, monitor y teclado.
-                </p>
-            </div>
-
+<div class="conteiner">
+<div class="hero-titulo">
+        <p >¿Cuáles son los componentes de una computadora?</p>
+    </div>
+    <div class="hero--bs">
+        <img class="img-fluid" src="imagenes/com.jpg" />
+    </div>
+</div>
+<div class="container">
+    <div class="hero-titulo">
+        <p>Componentes internos y periféricos</p>
+    </div>
+    <div class="row mar">
+        <div class="col-12 col-md-6 col-lg-6">
+            <p class="parrafos-bsr">En un ordenador, existen dos grandes grupos de componentes electrónicos, internos y periféricos. Pero a lo que realmente llamamos ordenador, es la agrupación de componentes internos dentro de un chasis o caja de PC.
+             Los componentes internos son los que componen el hardware de nuestro equipo, y serán los encargados de manejar la información que nosotros introducimos o la que descargamos desde Internet. Serán los que nos harán posible almacenar datos, jugar a juegos o mostrar por una pantalla los trabajos que realizamos. Los componentes internos básicos serán:
+                <ul>
+                    <li>Placa base</li>
+                    <li>Memoria RAM</li>
+                    <li>Disco duro</li>
+                    <li>Tarjeta gráfica</li>
+                    <li>Fuente de alimentación</li>
+                    <li>Tarjeta de red</li>
+                    <li>Disipadores</li>
+                    <li>Ventilaciones</li>
+                    <li>Ventilacion liquida</li>
+                </ul>
+            </p>
         </div>
         
-            <div class="contenedor-section-div">
-                <div class="contenido-textos">
-                    <center><h3 class="titulo">Externas</h3></center>
-                    <center>
-                        <p>
-                            El hardware externo es un conjunto de componentes físicos que no forman parte del dispositivo principal, sino que funcionan como elementos complementarios a este.
-                            <br />Además, el hardware externo puede ser de por sí un dispositivo central, puesto que a su vez puede interactuar con otros hardware que actuarían como externos.
-
-
-                        </p>
-                    </center>
-                </div><br />
-                      <img class="imagen-about-use" src="imagenes/teclado.jpg" />
-            </div><br /><br /><br />
-            <div class="contenedor-section-div">
-                <img class="imagen-about-use" src="imagenes/reparación.jpg"/>
-                <div class="contenido-textos">
-                    <center><h3 class="titulo">Internas</h3></center>
-                    <center>
-                        <p>
-                            El hardware interno es el conjunto de componentes físicos que forman parte del dispositivo principal, siendo inseparable de este.
-
-                            En otras palabras, cada parte del hardware interno es una pieza fundamental de cara al funcionamiento correcto del dispositivo. Ya que si faltara alguna de las partes de este, podría bien no ejecutar alguna tarea e incluso directamente no funcionar.
-                        </p>
-                    </center>
-                </div><br />
-            </div>
-        
-    </section>
-    <footer>
-@endsection('section')
+        <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../Imagenes/cp1.jpg" alt="">
+        </div>
+    </div>
+    <div class="ldiv"></div>
+    <div class="row mar">
+        <div class="col-12 col-md-6 col-lg-6">
+            <p class="parrafos-bsr"><b>El microprocesador</b>  es el cerebro del ordenador, el que se encarga de analizar absolutamente toda la información que pasa por él en forma de unos y ceros. El procesador decodifica y ejecuta las instrucciones de los programas cargados en la memoria principal del ordenador y coordina y controla todos o casi todos los componentes, así como los periféricos conectados. La velocidad con la que procesa estas instrucciones una CPU se mide en ciclos por segundo o hertzios (Hz).</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../Imagenes/pros.jpg" alt="">
+        </div>
+    </div>
+    <div class="ldiv"></div>
+    <div class="row mar">
+        <div class="col-12 col-md-6 col-lg-6">
+            <p class="parrafos-bsr"><b>Placa base</b> A pesar de que la CPU es el corazón de nuestro ordenador, éste no podría funcionar si no existiera la placa base. Una placa base es básicamente una placa PCB constituida por un circuito integrado que interconecta una serie de chips, condensadores y conectores repartidos por toda ella, que en su conjunto forma el ordenador.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../Imagenes/paba.jpg" alt="">
+        </div>
+    </div>
+    <div class="ldiv"></div>
+    <div class="row mar">
+        <div class="col-12 col-md-6 col-lg-6">
+            <p class="parrafos-bsr"><b>Memoria RAM</b> La memoria RAM (Random Access Memory) es un componente interno que se instala en la placa base y sirve para cargar y almacenar todas las instrucciones que se ejecutan en el procesador. Estas instrucciones son enviadas desde todos los dispositivos conectados a la placa base y a los puertos de nuestro equipo.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <img class="img-fluid" src="../Imagenes/mer.jpg" alt="">
+        </div>
+    </div>
+    <div class="ldiv"></div>
+@endsection

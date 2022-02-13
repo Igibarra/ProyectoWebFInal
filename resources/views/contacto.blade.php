@@ -1,14 +1,21 @@
-@extends('plantilla')
+@extends('plantilla2')
 @section('titulo')
     Contactanos
-@endsection('titulo')
-
+@endsection
+@section('id-page')
+    <p class="id-page">@Contactanos</p>
+@endsection
+@section('pan')
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Contactanos</li>
+  </ol>
+</nav>
+@endsection
 @section('section')
 <section class="contenedor section-div" >
-    <ul class="breadcrumb">
-          <li><a href="/">Home</a></li>
-          <li>Contactanos</li>
-        </ul><br/>
+    
     <link rel="stylesheet" type="text/css" href="estilos/login.css" />
 
             <table class="table">
@@ -17,7 +24,7 @@
                     </td>
                     <td>
                         <center>
-                            <img class="img_usuario" src="imagenes/Usuario.png" />
+                            <img class="img_usuario" src="imagenes/Usuario.png"  style="width: 50px;"/>
 
                         </center>
                     </td>

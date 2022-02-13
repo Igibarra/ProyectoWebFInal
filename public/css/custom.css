@@ -147,8 +147,24 @@
     border-radius: 10px;
     box-shadow: 3px 3px 7px #0E0D0D;
 }
+.hero-titulo{
+    width: 100%;
+    padding: 20px;
+    background-color: #0e0d0db9;
+    color: #fff;
+    margin: 10px auto;
+    font-size: 25px;
+    text-align: center;
+}
 
-
+.parrafos-bsr{
+    padding: 7px;
+    font-size: 20px;
+    text-align: justify;
+}
+ .mar{
+     margin: 10px;
+ }
 
 
 

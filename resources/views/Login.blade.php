@@ -1,15 +1,24 @@
-@extends('plantilla')
-
+@extends('plantilla2')
 @section('titulo')
-    Login
-@endsection('titulo')
+    Ingresar
+@endsection
+@section('id-page')
+    <p class="id-page">@Ingresa</p>
+@endsection
+@section('pan')
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Iniciar sesion</li>
+  </ol>
+</nav>
+@endsection
 @section('section')
+
 <section class="contenedor section-div" >
+
     <link rel="stylesheet" type="text/css" href="estilos/login.css" />
-    <ul class="breadcrumb">
-          <li><a href="/">Home</a></li>
-          <li>Login </li>
-        </ul><br/>
+
 
             <table class="table">
                 <tr>
@@ -17,7 +26,7 @@
                     </td>
                     <td>
                         <center>
-                            <img class="img_usuario" src="imagenes/Usuario.png" />
+                            <img class="img_usuario" src="imagenes/Usuario.png" style="width: 50px;" />
 
                         </center>
                     </td>

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+	<link rel="shortcut icon" href="imagenes/Logo.ico" />
     <title>@yield('titulo')</title>
 </head>
 <body>
@@ -33,26 +34,30 @@
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="formateo">Formateo</a></li>
-								<li><a class="dropdown-item" href="#">Componentes</a></li>
+								<li><a class="dropdown-item" href="cambio">Componentes</a></li>
 								<li><a class="dropdown-item" href="mantenimiento">Mantenimientos</a></li>
-								<li><a class="dropdown-item" href="#">Instalción de Software</a></li>
+								<li><a class="dropdown-item" href="instala">Instalción de Software</a></li>
 								
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acerca De</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Somos</a></li>
-								<li><a class="dropdown-item" href="#">Mision</a></li>
-								<li><a class="dropdown-item" href="#">Vision</a></li>
+								<li><a class="dropdown-item" href="quienes">Somos</a></li>
+								<li><a class="dropdown-item" href="mision">Mision</a></li>
+								<li><a class="dropdown-item" href="vision">Vision</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " aria-current="page" href="#">Contactos</a>
+							<a class="nav-link " aria-current="page" href="contacto">Contactos</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link " aria-current="page" href="login">Iniciar sesion</a>
+						</li>
+						
 					</ul>
-					<form class="d-flex">
-						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+					<form class="d-flex" method="get" action="https://www.google.com/search" target="_blank" class="buscador"> 
+						<input id="barra_buscador" type="search" name="q" placeholder="Término a buscar" autofocus required class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
 						<button class="btn btn-outline-success" type="submit">Buscar</button>
 					</form>
 				</div>

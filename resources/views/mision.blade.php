@@ -1,25 +1,38 @@
-@extends('plantilla')
+@extends('plantilla2')
 @section('titulo')
     Misión
-@endsection('titulo')
+@endsection
+@section('id-page')
+    <p class="id-page">@Mision</p>
+@endsection
+@section('pan')
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Acerca de</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Mision</li>
+  </ol>
+</nav>
+@endsection
+@section('hero')
+ <div class="hero--bs">
+ <img class="img-fluid" src="imagenes/mis.png"/>
+ </div>
+@endsection
 @section('section')
- <section class="contenedor section-div">
-    <ul class="breadcrumb">
-          <li><a href="/">Home</a></li>
-          <li><a href="acerca">Acerca de</a></li>
-          <li>Misión </li>
-        </ul><br/>
-        <div class="contenedor-section-div">
-            <div class="contenido-textos2">
-                <center><h1 class="titulo">Misión</h1></center>
-                <center>
-                    <p>
-                        Nuestra mision es poder llevar toda la informacion sobre
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-6 ">
+        <p class="parrafos-bsr">
+           <b>Nuestra Mision</b>   es poder llevar toda la informacion sobre
                         el hardware a aquellas personas que no esten familiarizadas
                         mediante una pagina de acceso gratuito de una manera facil e intuitiva
-                    </p>
-                </center>
-            </div><br />
-            <img class="imagen-about-use" src="imagenes/mision.jpg" />
-    </section>
+        </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 img-bsa">
+            <img src="../Imagenes/mis2.jpg" class="img-fluid" alt="...">
+        </div>
+    </div>
+</div>
+
 @endsection('section')
