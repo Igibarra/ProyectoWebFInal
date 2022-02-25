@@ -1,7 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ServiciosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +17,15 @@ Route::get('/', function (){
 })->name('index');
 
 /*Servicios*/
-Route::get('servicios',function(){
-    return view('Servicios');
-})->name('servicios');
+/*Route::resource('servicios','ServiciosController');*/
+Route::get('servicios','ServiciosController@index')->name('servicios.index');  
+Route::get('/servicios/{id}','ServiciosController@show')->name('servicios.show');
+
+
+/*Servicios*/
+/*Route::get('servicios',function(){
+    return view('/servicios/index');
+})->name('servicios');*/
 
 Route::get('formateo',function(){
     return view('Formateo');

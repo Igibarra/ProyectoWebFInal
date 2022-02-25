@@ -36,7 +36,9 @@
 								<li><a class="dropdown-item" href="formateo">Formateo</a></li>
 								<li><a class="dropdown-item" href="cambio">Componentes</a></li>
 								<li><a class="dropdown-item" href="mantenimiento">Mantenimientos</a></li>
-								<li><a class="dropdown-item" href="instala">Instalción de Software</a></li>
+								<li><a class="dropdown-item" href="instala">Instalación de Software</a></li>
+								<li><a class="dropdown-item" href="servicios">Lista de servicios</a></li>
+								
 								
 							</ul>
 						</li>

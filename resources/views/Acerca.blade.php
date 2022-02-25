@@ -2,7 +2,6 @@
 @section('titulo')
     Acerca de 
 @endsection('titulo')
-
 @section('section')
 <section class="contenedor section-div">
     <ul class="breadcrumb">
