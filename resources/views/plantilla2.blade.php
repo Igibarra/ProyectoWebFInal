@@ -14,6 +14,12 @@
 			<div>
 				<a id="boton" href="/"><img class="img_header" src="imagenes/Logo.png"/></a>
 				<h1 class="titulos_header">HardWorld</h1>
+				@if(Auth::check()) {{--El check() es para validar si esta autentificado--}}
+					<p style="color: aliceblue"><small style="color: aqua"> Usuario: {{ Auth::user()->name}}</small> </p>
+				@else
+					<p style="color: aliceblue">Usuario: <small style="color: rgb(44, 238, 238)">sin iniciar sesion</small>  </p>
+				@endif
+
 				@yield('id-page')
 			</div>
            
@@ -53,8 +59,27 @@
 						<li class="nav-item">
 							<a class="nav-link " aria-current="page" href="contacto">Contactos</a>
 						</li>
+						
 						<li class="nav-item">
-							<a class="nav-link " aria-current="page" href="login">Iniciar sesion</a>
+							@if (Auth::check())
+							
+								<a style="color: brown" class="nav-link" href="{{ route('logout') }}"
+								onclick="event.preventDefault();
+												document.getElementById('logout-form').submit();">
+									{{ __('cerrar secion') }}
+								</a>
+
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+									@csrf
+								</form>
+							
+								
+								
+							@else
+
+								<a class="nav-link " aria-current="page" href="login">Iniciar sesion</a>
+								
+							@endif
 						</li>
 						
 					</ul>
