@@ -81,7 +81,7 @@
 								
 							@endif
 						</li>
-						
+						{{--bejja--}}
 					</ul>
 					<form class="d-flex" method="get" action="https://www.google.com/search" target="_blank" class="buscador"> 
 						<input id="barra_buscador" type="search" name="q" placeholder="Término a buscar" autofocus required class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
