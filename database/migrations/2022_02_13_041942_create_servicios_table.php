@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('Encargado');
             $table->text('Costo');
             $table->text('Contacto');
+            $table->text('img');
             $table->timestamps();
         });
     }

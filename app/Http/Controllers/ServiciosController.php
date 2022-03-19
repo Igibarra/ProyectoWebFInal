@@ -15,7 +15,7 @@ class ServiciosController extends Controller
     {
         //
         $id=trim($request->get('buscarpor'));
-        $servicios= Servicios::where('NomServicio','like',"%$id%")->paginate(10);
+        $servicios= Servicios::where('NomServicio','like',"%$id%")->paginate(3);
        // $var_materias = Servicios::latest()->paginate(2);
         return view('servicios.index',compact('servicios'));
     }
