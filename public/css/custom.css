@@ -171,9 +171,11 @@
  }
 
 .contenedor-bs{
-    background-color: #5c5c5c;
-    margin: 10px;
+    background-color: #000000;
+    width: auto;
+    margin: 5px;
     padding: 20px;
+    border-radius: 10px;
 }
 .card{
     margin: 10px;
@@ -190,9 +192,20 @@
 
 
 
-
-
-
+.formbs{
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    background-color:#212529;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:3px 3px 7px #195b87;
+}
+form label{
+    width: 80%;
+    color: #fff;
+    font-size: 20px;
+}
 
 
 

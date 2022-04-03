@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiciosController;
 use Illuminate\Support\Facades\Auth;
@@ -18,16 +20,7 @@ Route::get('/', function (){
     return view('index');
 })->name('index');
 
-/*Servicios*/
-/*Route::resource('servicios','ServiciosController');*/
-Route::get('servicios','ServiciosController@index')->name('servicios.index');  
-Route::get('/servicios/{id}','ServiciosController@show')->name('servicios.show');
 
-
-/*Servicios*/
-/*Route::get('servicios',function(){
-    return view('/servicios/index');
-})->name('servicios');*/
 
 Route::get('formateo',function(){
     return view('Formateo');
@@ -120,4 +113,22 @@ Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->na
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
 
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('admin/', [AdminController::class, 'index'])->
+    middleware('auth.admin')->
+    name('admin.index');
+Route::get('servicios/create',[AdminController::class,'create'])->
+middleware('auth.admin')->
+name('servicios.create');
+
+Route::post('servicios/',[AdminController::class,'store'])->name('servicios.store');
+Route::get('servicios/{id}', [AdminController::class,'show'])->name('admin.show');
+
+
+
+Route::get('servicios/', [ServiciosController::class,'index'])->name('servicios.index');
+Route::get('servicios/{id}', [ServiciosController::class,'show'])->name('servicios.show');
+Route::put('servicios/{servicios}', [ServiciosController::class,'update'])->name('servicios.update');
+Route::delete('servicios/{servicios}',[ServiciosController::class,'destroy'])->name('servicios.destroy');

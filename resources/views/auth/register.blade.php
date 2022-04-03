@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header bg-primary">{{ __('Registrate') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -63,11 +63,22 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
+                                <div class="g-recaptcha mt-3" data-sitekey="{{config('services.recaptcha.key')}}"></div>
+                                @if (Session::has('g-recaptcha-response'))
+                                    <p class="alert {{Session::get('alert-class', 'alert-info')}}" >
+                                        {{Session::get('g-recaptcha-response')}}
+                                    </p>
+                                @endif
+                                <br/>
+
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Registrar') }}
                                 </button>
+                               
                             </div>
+                            
                         </div>
+                        
                     </form>
                 </div>
             </div>

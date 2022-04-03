@@ -21,8 +21,8 @@
         <h4 class="tn2">Busca el servicio que deseas</h4><br> 
     </div>
 
-    {{-- buscador Servicios--}}
-    <div class="container-fluid contenedor-bs">
+    {{-- buscador --}}
+    <div class="container-fluid ">
             <form class="d-flex bus-bs" >
                 <input name="buscarpor" class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search" >
                 <button class="btn btn-outline-success" type="submit" >Buscar</button>            
@@ -38,25 +38,14 @@
                     <div class="card-body">
                       <h5 class="card-title">{{$itemservicios->NomServicio}}</h5>
                       <p class="card-text">{{$itemservicios->Descripcion}}</p>
-                      <p class="card-text">Costo: {{$itemservicios->Costo}}</p>
                       <p class="card-text">Encargado: {{$itemservicios->Encargado}}</p>
                       <p id="cel" class="card-text">Cel: {{$itemservicios->Contacto}}</p>
-                      
-                      
-                        @if (Auth::check())
+                      <a href="#" class="btn btn-primary">Solicitar Servicio</a>
+                      @if (Auth::check())
 								@if (Auth()->user()->role=='admin')
-								
-                               {{-- <form action="{{route('admin.destroy',$itemservicios->id )}}" class="mt-2"> --}}
-                                <a href="#" class="btn btn-primary">Solicitar Servicio</a>
-                                   @csrf
-                                   @method('delete')
-                                   
-                                   <button type="submit" class="btn btn-warning">Editar</button>
-                                    <button type="submit" class="btn btn-danger">Eliminar</button>
-                               </form> 
-                                
+								<a class="btn btn-warning" href="{{route('servicios.show',$itemservicios->id)}}">Editar</a>
 								@endif
-					    @endif 
+							@endif
                     </div>
                   </div>
               </div>
@@ -69,4 +58,3 @@
     </div>
     
 @endsection
-{{-- {{$itemservicios->NomServicio}} --}}

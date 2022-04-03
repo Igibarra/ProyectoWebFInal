@@ -7,7 +7,10 @@ use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
+
+use Symfony\Component\HttpFoundation\Session\Session as SessionSession;
 
 class RegisterController extends Controller
 {
@@ -53,7 +56,23 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:5', 'confirmed'],
+
+            'g-recaptcha-response'=> function ($attribute, $value, $fail) {
+                $secretKey = config('services.recaptcha.secret');
+                $response=$value;
+                $userIP=$_SERVER['REMOTE_ADDR'];
+                $url= "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$response&remoteip=$userIP";
+                $response = \file_get_contents($url);
+                $response = json_decode($response);
+                if (!$response -> success) {
+                    Session::flash('g-recaptcha-response','Porfavor Marca la recaptcha');
+                    Session::flash('alert-class','alert-danger');
+                    $fail($attribute.'google reCaptha is invalid');
+                    
+                }
+            },
         ]);
+
     }
 
     /**

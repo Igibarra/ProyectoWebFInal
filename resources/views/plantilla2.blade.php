@@ -5,14 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css" />
-	<link rel="shortcut icon" href="imagenes/Logo.ico" />
+	<link rel="shortcut icon" href="../../imagenes/Logo.png" />
     <title>@yield('titulo')</title>
 </head>
 <body>
 	<header>
 		<section class="header-bs">
 			<div>
-				<a id="boton" href="/"><img class="img_header" src="imagenes/Logo.png"/></a>
+				<a id="boton" href="/"><img class="img_header" src="../../imagenes/Logo.png"/></a>
 				<h1 class="titulos_header">HardWorld</h1>
 				@if(Auth::check()) {{--El check() es para validar si esta autentificado--}}
 					<p style="color: aliceblue"><small style="color: aqua"> Usuario: {{ Auth::user()->name}}</small> </p>
@@ -26,7 +26,7 @@
         </section>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
 		  	<div class="container-fluid">
-		   		<a class="navbar-brand" href="#"><img class="img_header" src="imagenes/Logo.png"/></a>
+		   		<a class="navbar-brand" href="#"><img class="img_header" src="../../imagenes/Logo.png"/></a>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 
@@ -63,25 +63,30 @@
 						<li class="nav-item">
 							@if (Auth::check())
 							
-								<a style="color: brown" class="nav-link" href="{{ route('logout') }}"
+								<a style="color: rgb(230, 24, 24)" class="nav-link" href="{{ route('logout') }}"
 								onclick="event.preventDefault();
 												document.getElementById('logout-form').submit();">
-									{{ __('cerrar secion') }}
+									{{ __('Cerrar Sesion') }}
 								</a>
 
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
 									@csrf
 								</form>
-							
-								
-								
+	
 							@else
-
-								<a class="nav-link " aria-current="page" href="login">Iniciar sesion</a>
-								
+								<a class="nav-link " aria-current="page" href="login">Iniciar sesion</a>	
 							@endif
 						</li>
-						{{--bejja--}}
+						<li class="nav-item">
+							@if (Auth::check())
+								@if (Auth()->user()->role=='admin')
+								<a style="color: rgb(199, 235, 41)" class="nav-link " aria-current="page" href="{{route('admin.index')}}">Administrar Pagina</a>
+								@endif
+							@endif
+							
+							
+						</li>
+						{{--Buscador General--}}
 					</ul>
 					<form class="d-flex" method="get" action="https://www.google.com/search" target="_blank" class="buscador"> 
 						<input id="barra_buscador" type="search" name="q" placeholder="Término a buscar" autofocus required class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -103,7 +108,7 @@
     </section>
 	<footer class="conteiner-fluid">
 		<div class="container-fluid">
-		<a id="boton" href="/"><img class="img_f" src="imagenes/Logo.png"/></a>
+		<a id="boton" href="/"><img class="img_f" src="../../imagenes/Logo.png"/></a>
 			<div class="row">
 				<div class="col-12 col-lg-6">
 						Estamos ubicados en: <br />
@@ -122,6 +127,6 @@
             <p>Copyright &copy;;2021 HardWorld</p>
         </div>
     </footer>
-	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
