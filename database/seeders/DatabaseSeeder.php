@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-       //
+        $user = new User; 
+        $user->name ='Admin';
+        $user->email ='Admin@gmail.com';
+        $user->password = '1234';
+        $user->role = 'admin';
+        $user->save();
     }
 }

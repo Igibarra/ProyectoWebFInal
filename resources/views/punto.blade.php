@@ -16,7 +16,7 @@
                     <center><h3 class="titulo">Software de Punto y Venta</h3></center>
                     <center class="titulo" >
                         <p class="ti">
-                           Con el software punto de venta de Hardworld, puedes realizar cobros, hacer un seguimiento de tus ventas y administrar tu inventario fácilmente, todo en un solo lugar. Es rápido de configurar y fácil de usar, por lo que puedes comenzar a vender de manera más inteligente de inmediato.
+                           Con el software punto de venta de genesis spa, puedes realizar cobros, hacer un seguimiento de tus ventas y administrar tu inventario fácilmente, todo en un solo lugar. Es rápido de configurar y fácil de usar, por lo que puedes comenzar a vender de manera más inteligente de inmediato.
                        </p>
                     </center>
                 </div><br />

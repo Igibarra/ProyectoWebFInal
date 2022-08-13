@@ -174,7 +174,7 @@
                 <h1>4<span>0</span>4</h1>
             </div>
             <p>
-                Es posible que la página que está buscando haya sido eliminada debido a un cambio de nombre o no esté disponible temporalmente.
+                Es posible que la página que está buscando haya sido eliminada debido a un esteticos de nombre o no esté disponible temporalmente.
             </p>
             <a href="/">Pagina de inicio</a>
         </div>

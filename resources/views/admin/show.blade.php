@@ -1,7 +1,7 @@
 @extends('plantilla2')
-@section('titulo','Lista de Servicios de Hardworld ')
+@section('titulo','Lista de Servicios de Genesis spa ')
 @section('id-page')
-    <p class="id-page">@Lista de Servicios de Hardworld </p>
+    <p class="id-page">@Lista de Servicios de genesis spa </p>
 @endsection
 @section('pan')
 

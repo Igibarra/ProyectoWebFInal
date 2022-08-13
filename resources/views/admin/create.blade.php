@@ -25,7 +25,7 @@
                 <input type="text" class="form-control fcbs" placeholder="Nombre del servicio" id="nombre" name="nombre" value="{{old('nombre')}}">
             </label> <br>
             @error('nombre')
-                <small style="color: rgb(238, 255, 0)">*{{$message}}</small>
+                <small style="color: purple">*{{$message}}</small>
             @enderror 
             </div>
             <div class="mb-3">
@@ -34,7 +34,7 @@
                 <textarea  class="form-control fcbs" name="descripcion" rows="2" cols="50" >{{old('descripcion')}}</textarea> 
             </label> <br>
             @error('descripcion')
-                <small style="color: rgb(238, 255, 0)">*{{$message}}</small>
+                <small style="color: purple">*{{$message}}</small>
             @enderror <br>
             </div>
 
@@ -43,7 +43,7 @@
                 <input type="text" class="form-control " name="encargado" value="{{old('encargado')}}">
             </label> <br>
             @error('encargado')
-                <small style="color: rgb(238, 255, 0)">*{{$message}}</small>
+                <small style="color: purple">*{{$message}}</small>
             @enderror
             <br>
   

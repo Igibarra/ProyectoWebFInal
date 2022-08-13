@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .img_header{
@@ -15,7 +16,7 @@
 
 .header-bs{
     text-align: center;
-    background-color: #212529;
+    background-color: #313233;
 }
 
 .titulos_header{
@@ -23,14 +24,14 @@
     color: white;
 }
 .btn-outline-success {
-    color: #195b87;
+    color: #000407;
     border-color: #195b87;
   }
   
   .btn-outline-success:hover {
     color: #fff;
-    background-color: #198754;
-    border-color: #198754;
+    background-color: #641987;
+    border-color: #641987;
 }
 
 .carousel-item {
@@ -80,7 +81,7 @@
 }
 
 .breadcrumb-item.active {
-    color: #4aa2fa;
+    color: #6c189d;
     padding: 10px;
 }
 
@@ -91,7 +92,7 @@
 }
 
 .titu-bs .tn2{
-    color: #195b87;
+    color: #6c189d;
     font-size: 40px;
 }
 .ifbs{
@@ -100,13 +101,13 @@
 }
 
 .ldiv{
-    width: 80%;
+    width: 100%;
     height: 5px;
-    background-color: #0d6efd;
+    background-color: #6c189d;
     margin: 20px auto;
 }
 .id-page{
-    color: #0d6efd;
+    color: #6c189d;
     margin: 0px;
 }
 
@@ -171,7 +172,7 @@
  }
 
 .contenedor-bs{
-    background-color: #000000;
+    background-color: #ffffff00;
     width: auto;
     margin: 5px;
     padding: 20px;
@@ -305,3 +306,53 @@ section .section-div {
     .ancla:visited {
         color: red;
     }
+
+
+    /* Servicios */
+
+.subtitulo{
+    color: #6c189d;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #6c189d;
+}
+
+.number{
+    display: inline-block;
+    /* 02 */
+    background-image: linear-gradient(to top, #6c189d 0%, #fbc2eb 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+}

@@ -12,7 +12,7 @@
         <center> <img src="imagenes/hola.png" width="600px" /></center>
          <center>
                 <p class=" ti">
-                    En esta sección conoceras todo acerca de Hardworld
+                    En esta sección conoceras todo acerca de genesis spa
                 </p>
                 <ul class="ti">
                         <li><a href="quienes">Quienes somos</a></li>

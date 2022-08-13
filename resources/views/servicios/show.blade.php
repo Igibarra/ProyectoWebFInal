@@ -1,6 +1,6 @@
 @extends('plantilla2')
 @section('titulo')
-    Lista de Servicios de Hardworld 
+    Lista de Servicios de genesis spa 
 @endsection
 @section('id-page')
     <p class="id-page">@lista_de_servicios</p>

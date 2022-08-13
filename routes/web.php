@@ -22,17 +22,17 @@ Route::get('/', function (){
 
 
 
-Route::get('formateo',function(){
-    return view('Formateo');
-})->name('formateo');
+Route::get('masajes',function(){
+    return view('Masajes');
+})->name('masajes');
 
-Route::get('cambio',function(){
-    return view('Cambio');
-})->name('cambio');
+Route::get('esteticos',function(){
+    return view('esteticos');
+})->name('esteticos');
 
-Route::get('mantenimiento',function(){
-    return view('Mantenimiento');
-})->name('mantenimiento');
+Route::get('naturales',function(){
+    return view('naturales');
+})->name('naturales');
 
 Route::get('instala',function(){
     return view('instala');

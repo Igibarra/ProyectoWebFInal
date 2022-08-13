@@ -1,7 +1,7 @@
 @extends('plantilla2')
-@section('titulo','Lista de Servicios de Hardworld ')
+@section('titulo','Lista de Servicios de genesis spa ')
 @section('id-page')
-    <p class="id-page">@Lista de Servicios de Hardworld </p>
+    <p class="id-page">@Lista de Servicios de genesis spa </p>
 @endsection
 @section('pan')
 
@@ -17,7 +17,6 @@
 @section('section')
     <div class="card-body" align="center">
         <h1 class="card-title">LISTA DE SERVICIOS</h1>
-        <div class="ldiv"></div>
         <h4 class="tn2">Busca el servicio que deseas</h4><br> 
     </div>
 

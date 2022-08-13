@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>@yield('titulo','Hardworld')</title>
+    <title>@yield('titulo','genesis spa')</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="shortcut icon" href="imagenes/Logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <style>HardWorld</style>
+    <style>genesis spa</style>
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
                         <a id="boton" href="/"><img class="img_header" src="imagenes/Logo.png"/></a>
                     </td>
                     <td>
-                        <h1 class="titulos_header">HardWorld</h1>
+                        <h1 class="titulos_header">genesis spa</h1>
                     </td>
 
                 </tr>
@@ -43,9 +43,9 @@
                 <li><a href="/">Inicio</a></li>
                 <li><a href="servicios">Servicios</a>
                     <ul>
-                        <li><a href="formateo">Formateo</a></li>
-                        <li><a href="cambio">Componentes</a></li>
-                        <li><a href="mantenimiento">Mantenimiento</a></li>
+                        <li><a href="masajes">masajes</a></li>
+                        <li><a href="esteticos">esteticos</a></li>
+                        <li><a href="Tratamientos Naturales">Tratamientos Naturales</a></li>
                         <li><a href="instala">Instalción de Software</a>
                             <ul>
                                 <li><a href="office">Office</a></li>
@@ -94,18 +94,18 @@
                     <td class="td">
                         Tambien nos puedes contactar mediante correo electronico: <br />
   
-                        Hardworld@gmail.com
+                        genesis spa@gmail.com
                     </td>
                     <td class=" td">
                         Buscanos en redes sociales<br />
-                        facebook: hardworld<br />
+                        facebook: genesis spa<br />
                         whatsapp: 3112334413
                     </td>
                 </tr>
             </table>
         </div>
         <div class="footer-bottom">
-            <p>Copyright &copy;;2021 HardWorld</p>
+            <p>Copyright &copy;;2021 genesis spa</p>
         </div>
     </footer>
 </body>

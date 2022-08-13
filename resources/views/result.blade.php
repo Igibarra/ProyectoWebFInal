@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>HardWorld</title>
+    <title>genesis spa</title>
     <link rel="stylesheet" type="text/css" href="estilos/index.css" />
     <link rel="shortcut icon" href="imagenes/Logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +25,7 @@
                         <img class="img_header" src="Imagenes/Logo.png" />
                     </td>
                     <td>
-                        <h1 class="titulos_header">HardWorld</h1>
+                        <h1 class="titulos_header">genesis spa</h1>
                     </td>
 
                 </tr>
@@ -41,9 +41,9 @@
                 <li><a href="">Inicio</a></li>
                 <li><a href="/result">Servicios</a>
                     <ul>
-                        <li><a href="">Formateo</a></li>
+                        <li><a href="">masajes</a></li>
                         <li><a href="">Limpieza Interna</a></li>
-                        <li><a href="">Mantenimiento</a></li>
+                        <li><a href="">Tratamientos Naturales</a></li>
                         <li><a href="">Instalción de Software</a>
                             <ul>
                                 <li><a href="">Programación</a></li>
@@ -100,18 +100,18 @@
                     </td>
                     <td class="td">
                         Tambien nos puedes contactar mediante correo electronico: <br />
-                        Hardworld@gmail.com
+                        genesis spa@gmail.com
                     </td>
                     <td class=" td">
                         Buscanos en redes sociales<br />
-                        facebook: hardworld<br />
+                        facebook: genesis spa<br />
                         whatsapp: 3112334413
                     </td>
                 </tr>
             </table>
         </div>
         <div class="footer-bottom">
-            <p>Copyright &copy;;2021 HardWorld</p>
+            <p>Copyright &copy;;2021 genesis spa</p>
         </div>
     </footer>
 </body>

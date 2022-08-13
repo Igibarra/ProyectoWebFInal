@@ -28,7 +28,7 @@
             <div class="card-body">
               <h5 class="card-title">Actualizar un nuevo servicio</h5>
               <p class="card-text">Aqui podremos Actualizar servicio para ofrecerlo a nuestros clientes</p>
-              <a href="#" class="btn btn-warning">Ir Actualizar</a>
+              <a href="edit" class="btn btn-warning">Ir Actualizar</a>
             </div>
             <div class="card-body">
               <h5 class="card-title">Eliminar un servicio</h5>
