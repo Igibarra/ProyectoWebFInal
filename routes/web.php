@@ -125,9 +125,14 @@ Route::get('servicios/create',[AdminController::class,'create'])->
 middleware('auth.admin')->
 name('servicios.create');
 
-Route::get('reservaciones/show',[AdminController::class,'show'])->
+Route::get('reservaciones/show',[ReservacioneController::class,'show'])->
 middleware('auth.admin')->
 name('reservaciones.show');
+
+Route::get('reservaciones/',[ReservacioneController::class,'index'])->
+middleware('auth.admin')->
+name('reservaciones.index');
+
 Route::post('servicios/',[AdminController::class,'store'])->name('servicios.store');
 Route::get('servicios/{id}', [AdminController::class,'show'])->name('admin.show');
 

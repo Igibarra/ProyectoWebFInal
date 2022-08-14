@@ -26,8 +26,8 @@ class Reservacione extends Model
     static $rules = [
 		'nombre' => 'required',
 		'apellidos' => 'required',
-		'email' => 'required',
-		'telefono' => 'required',
+		'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+		'telefono' => ['required', 'int'],
 		'servicio' => 'required',
 		'fecha' => 'required',
     ];
@@ -40,7 +40,6 @@ class Reservacione extends Model
      * @var array
      */
     protected $fillable = ['nombre','apellidos','email','telefono','servicio','fecha'];
-
 
 
 }

@@ -3,7 +3,6 @@
 @section('template_title')
     Reserva tu Cita
 @endsection
-
 @section('content')
     <section class="content container-fluid">
         <div class="row">
@@ -15,6 +14,11 @@
                     <div class="card-header">
                         <span class="card-title">Reserva con Genesis Spa</span>
                     </div>
+                    @if ($message = Session::get('success'))
+                        <div class="alert alert-success">
+                            <p>{{ $message }}</p>
+                        </div>
+                    @endif
                     <div class="card-body">
                         <form method="POST" action="{{ route('reservaciones.store') }}"  role="form" enctype="multipart/form-data">
                             @csrf
