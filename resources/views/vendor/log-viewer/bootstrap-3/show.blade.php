@@ -5,7 +5,7 @@
  * @var  string|null                                                                                          $query
  */
 ?>
-
+@extends('plantilla2')
 @extends('log-viewer::bootstrap-3._master')
 
 @section('content')

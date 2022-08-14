@@ -4,6 +4,8 @@ use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiciosController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\ReservacioneController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -123,6 +125,9 @@ Route::get('servicios/create',[AdminController::class,'create'])->
 middleware('auth.admin')->
 name('servicios.create');
 
+Route::get('reservaciones/show',[AdminController::class,'show'])->
+middleware('auth.admin')->
+name('reservaciones.show');
 Route::post('servicios/',[AdminController::class,'store'])->name('servicios.store');
 Route::get('servicios/{id}', [AdminController::class,'show'])->name('admin.show');
 
@@ -132,3 +137,14 @@ Route::get('servicios/', [ServiciosController::class,'index'])->name('servicios.
 Route::get('servicios/{id}', [ServiciosController::class,'show'])->name('servicios.show');
 Route::put('servicios/{servicios}', [ServiciosController::class,'update'])->name('servicios.update');
 Route::delete('servicios/{servicios}',[ServiciosController::class,'destroy'])->name('servicios.destroy');
+
+Route::resource('reservaciones',ReservacioneController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);

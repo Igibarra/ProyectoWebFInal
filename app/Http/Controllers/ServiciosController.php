@@ -103,25 +103,25 @@ class ServiciosController extends Controller
     public function update(Request $request, Servicios $servicios)
     {
         
-        // $request->validate([
-        //     'file' => 'required|image|max:5000',
-        //     'nombre'=> 'required',
-        //     'descripcion' => 'required'
-        // ]);
-        // if($request->hasFile('file')){
-        //      $imagenes = $request->file('file')->store('public/imagenes/servicios');
-        //      $url = Storage::url($imagenes);   
-        // }   
+        $request->validate([
+        'file' => 'required|image|max:5000',
+        'nombre'=> 'required',
+        'descripcion' => 'required'
+        ]);
+        if($request->hasFile('file')){
+        $imagenes = $request->file('file')->store('public/imagenes/servicios');
+        $url = Storage::url($imagenes);   
+        }   
         
-        // $servicios->NomServicio = $request->nombre;
-        // $servicios->Descripcion = $request->descripcion;
-        // $servicios->Encargado = $request->encargado;
-        // $servicios->Costo = $request->costo;
-        // $servicios->Contacto = $request->contacto;
-        // $servicios->img = $url;
+        $servicios->NomServicio = $request->nombre;
+        $servicios->Descripcion = $request->descripcion;
+        $servicios->Encargado = $request->encargado;
+        $servicios->Costo = $request->costo;
+        $servicios->Contacto = $request->contacto;
+        $servicios->img = $url;
 
-        // $servicios->save();
-        // return redirect()->route('servicios.index',$servicios->id);
+        $servicios->save();
+        return redirect()->route('servicios.index',$servicios->id);
     }
 
     /**
@@ -131,7 +131,12 @@ class ServiciosController extends Controller
      * @return \Illuminate\Http\Response
      */
    
-    public function destroy(servicios $servicio){
+    public function destroy($id){
+        $servicio = servicios::find($id)->delete();
+
+        return redirect()->route('servicios.index')
+            ->with('success', 'servicios deleted successfully');
         $servicio->delete();
     }
+    
 }

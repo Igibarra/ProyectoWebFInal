@@ -1,6 +1,6 @@
 @extends('plantilla2')
 @section('titulo')
-    Misión
+    Misión,Visión y Valores
 @endsection
 @section('id-page')
     <p class="id-page">@Mision</p>
@@ -10,27 +10,27 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
     <li class="breadcrumb-item"><a href="#">Acerca de</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Mision</li>
+    <li class="breadcrumb-item active" aria-current="page">Misión,Visión y Valores</li>
   </ol>
 </nav>
-@endsection
-@section('hero')
- <div class="hero--bs">
- <img class="img-fluid" src="imagenes/mis.png"/>
- </div>
 @endsection
 @section('section')
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6 ">
         <p class="parrafos-bsr">
-           <b>Nuestra Mision</b>   es poder llevar toda la informacion sobre
-                        el hardware a aquellas personas que no esten familiarizadas
-                        mediante una pagina de acceso gratuito de una manera facil e intuitiva
+           <b>Nuestra Mision</b> es ayudar a cumplir la visión de nuestros clientes a través de nuestro trabajo y marcando la diferencia en el sector con servicios profesionales e innovadores.
+        </p><br>
+        <p class="parrafos-bsr">
+           <b>Nuestra Visión</b> Nuestra visión es convertirnos en el refugio de nuestros clientes, donde puedan relajarse, hacer una pausa en su vida y por ende mejorar su calidad de vida a través de nuestros servicios.
+        </p>
+        <p class="parrafos-bsr">
+           <b>Nuestros Valores</b>Innovación, puntualidad, honestidad, profesionalismo, resultados, empatía, ser hunano (con clientes y colaboradores)
         </p>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 img-bsa">
-            <img src="../Imagenes/mis2.jpg" class="img-fluid" alt="...">
+        <div class="col-12 col-md-6 col-lg-6 img-bsa shadow-1-strong rounded">
+            <img src="../Imagenes/13.jpg" class="img-fluid" alt="...">
+        </div>
         </div>
     </div>
 </div>

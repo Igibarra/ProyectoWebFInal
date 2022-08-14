@@ -14,24 +14,17 @@
   </ol>
 </nav>
 @endsection
-@section('hero')
- <div class="hero--bs">
- <img class="img-fluid" src="imagenes/qs.jpg"/>
- </div>
-@endsection
 @section('section')
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6 ">
         <p class="parrafos-bsr">
-           <b>genesis spa</b>  es una empresa que integra todo el conocimiento 
-             sobre las computadoras y lo presenta de una manera simple 
-            y entendible para cualquier tipo de usuario,
-            ya sean expertos o inexpertos, genesis spa es para ti
+           <b>Somos</b> un centro dirigido a ambos sexos, donde nuestro objetivo principal es lograr que las personas se sientan mejor consigo mismas, mediante  nuestros servicios de  cuidado facial y  corporal, para mantener y/o mejorar la apariencia física, elevando la autoestima y por ende, obtener  una mejor salud física y  emocional;  así como, el lograr  olvidarse   por  un   momento   del   estrés   bajo  el  que  vivimos,   en  un  espacio  lleno  de  armonía  y profesionalismo para satisfacer las necesidad de verse y sentirse bien.
+           <br><b>En GENESIS SPA</b>, contamos con personal calificado, productos farmacomecéuticos y aparatología médico-estético que cumple los mayores estándares calidad a nivel mundial, esto nos permite lograr excelentes resultados.
         </p>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 img-bsa">
-            <img src="../Imagenes/gru.jpg" class="img-fluid" alt="...">
+        <div class="col-12 col-md-6 col-lg-6 img-bsa shadow-1-strong rounded">
+            <img src="../Imagenes/12.jpg" class="img-fluid" alt="...">
         </div>
     </div>
 </div>

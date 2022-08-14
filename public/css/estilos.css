@@ -3211,8 +3211,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #116ac2;
+  border-color: #1c6fc1;
 }
 
 .btn-primary:hover {
@@ -3810,7 +3810,7 @@ fieldset:disabled .btn {
 }
 
 .btn-link {
-  font-weight: 400;
+  font-weight: 5000;
   color: #212529;
   text-decoration: underline;
 }

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="../../imagenes/Logo.png" />
     <title>@yield('titulo')</title>
@@ -37,32 +38,33 @@
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="servicios">Lista de servicios disponible</a></li>
                 <li><a class="dropdown-item" href="masajes">Masajes</a></li>
-								<li><a class="dropdown-item" href="esteticos">Tratamientos esteticos</a></li>
+								<li><a class="dropdown-item" href="esteticos">Tratamientos Esteticos</a></li>
 								<li><a class="dropdown-item" href="naturales">Tratamientos Naturales</a></li>
-								<li><a class="dropdown-item" href="instala">Tratamientos Terapeuticos</a></li>	
+                @if (Auth::check())
+								  @if (Auth()->user())
+                  <li><a class="dropdown-item" href="{{route('reservaciones.create')}}">Reservar</a></li>
+                  @endif
+                @endif
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acerca De</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="quienes">Somos</a></li>
-								<li><a class="dropdown-item" href="mision">Mision</a></li>
-								<li><a class="dropdown-item" href="vision">Vision</a></li>
+								<li><a class="dropdown-item" href="mision">Misión,Visión y Valores</a></li>
 							</ul>
 						</li>	
 						<li class="nav-item">
 							@if (Auth::check())
-							
+						</li>	
 								<a style="color: rgb(230, 24, 24)" class="nav-link" href="{{ route('logout') }}"
 								onclick="event.preventDefault();
 												document.getElementById('logout-form').submit();">
 									{{ __('Cerrar Sesion') }}
 								</a>
-
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
 									@csrf
 								</form>
-	
 							@else
 								<a class="nav-link " aria-current="page" href="login">Iniciar sesion</a>	
 							@endif

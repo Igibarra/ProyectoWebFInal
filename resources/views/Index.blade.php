@@ -193,9 +193,8 @@
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?Key=AIzaSyC99WJ4j8SX9l8uYOHfBjGnoW9hYlZUixw&callback=initMap">
         </script>
-</body>
-         </div><br>
-            
+        </body>
+         </div><br>        
     </div>
     </section>
 @endsection('section')

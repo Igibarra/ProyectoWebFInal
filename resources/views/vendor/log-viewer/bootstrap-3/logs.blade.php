@@ -1,4 +1,5 @@
 @extends('log-viewer::bootstrap-3._master')
+@extends('plantilla2')
 
 <?php /** @var  Illuminate\Pagination\LengthAwarePaginator  $rows */ ?>
 

@@ -1,6 +1,6 @@
 @extends('plantilla2')
 @section('titulo')
-   esteticos
+   Tratamientos esteticos
 @endsection
 @section('id-page')
     <p class="id-page">@esteticos</p>
@@ -10,71 +10,63 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
     <li class="breadcrumb-item"><a href="#">Servicios</a></li>
-    <li class="breadcrumb-item active" aria-current="page">esteticos</li>
+    <li class="breadcrumb-item active" aria-current="page">Tratamientos Esteticos</li>
   </ol>
 </nav>
 @endsection
 @section('section')
-<div class="conteiner">
-<div class="hero-titulo">
-        <p >¿Cuáles son los esteticos de una computadora?</p>
-    </div>
-    <div class="hero--bs">
-        <img class="img-fluid" src="imagenes/com.jpg" />
-    </div>
-</div>
 <div class="container">
     <div class="hero-titulo">
-        <p>esteticos internos y periféricos</p>
+        <p>Tu Belleza Estetica</p>
     </div>
     <div class="row mar">
         <div class="col-12 col-md-6 col-lg-6">
-            <p class="parrafos-bsr">En un ordenador, existen dos grandes grupos de esteticos electrónicos, internos y periféricos. Pero a lo que realmente llamamos ordenador, es la agrupación de esteticos internos dentro de un chasis o caja de PC.
-             Los esteticos internos son los que componen el hardware de nuestro equipo, y serán los encargados de manejar la información que nosotros introducimos o la que descargamos desde Internet. Serán los que nos harán posible almacenar datos, jugar a juegos o mostrar por una pantalla los trabajos que realizamos. Los esteticos internos básicos serán:
-                <ul>
-                    <li>Placa base</li>
-                    <li>Memoria RAM</li>
-                    <li>Disco duro</li>
-                    <li>Tarjeta gráfica</li>
-                    <li>Fuente de alimentación</li>
-                    <li>Tarjeta de red</li>
-                    <li>Disipadores</li>
-                    <li>Ventilaciones</li>
-                    <li>Ventilacion liquida</li>
+            <p class="parrafos-bsr">Es una de las mejores opciones en tratamientos faciales, corporales y depilación, además te ofrecemos productos de la mejor calidad para el cuidado de tu piel.
+                Nuestra misión es mejorar el bienestar de nuestros clientes con servicios de la más alta calidad. Nuestros especialistas están altamente calificados en cada uno de los tratamientos que ofrecemos. 
+                Somos una de las mejores compañías en ofrecer tratamientos faciales y corporales, de la mas alta calidad, servicio y resultados además te ofrecemos productos de la mejorar la calidad del cuidado de tu piel.<br>
+                <center><h2>Ventajas</h2></center>
+                <ul class="n-service">
+                    <li><h3>Retrasa el envejecimiento del rostro<h3></li>
+                    <li><h3>Relaja la musculatura</h3></li>
+                    <li><h3>Aporta luminosidad y brillo</h3></li>
+                    <li><h3>Eliminando impurezas y células muertas</h3></li>
+                    <li><h3>Mejora la salud general y psicofísica</h3></li>
+                    <li><h3>Favorece una mejor calidad de vida</h3></li>
+                    <li><h3>Aumenta la autoestima y la confianza de quienes se someten a estos procedimientos</li>
+                    <li><h3>Embellecimiento de la cara y cuello</h3></li>
                 </ul>
             </p>
         </div>
         
         <div class="col-12 col-md-6 col-lg-6">
-            <img class="img-fluid" src="../Imagenes/cp1.jpg" alt="">
-        </div>
-    </div>
-    <div class="ldiv"></div>
-    <div class="row mar">
-        <div class="col-12 col-md-6 col-lg-6">
-            <p class="parrafos-bsr"><b>El microprocesador</b>  es el cerebro del ordenador, el que se encarga de analizar absolutamente toda la información que pasa por él en forma de unos y ceros. El procesador decodifica y ejecuta las instrucciones de los programas cargados en la memoria principal del ordenador y coordina y controla todos o casi todos los esteticos, así como los periféricos conectados. La velocidad con la que procesa estas instrucciones una CPU se mide en ciclos por segundo o hertzios (Hz).</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6">
-            <img class="img-fluid" src="../Imagenes/pros.jpg" alt="">
-        </div>
-    </div>
-    <div class="ldiv"></div>
-    <div class="row mar">
-        <div class="col-12 col-md-6 col-lg-6">
-            <p class="parrafos-bsr"><b>Placa base</b> A pesar de que la CPU es el corazón de nuestro ordenador, éste no podría funcionar si no existiera la placa base. Una placa base es básicamente una placa PCB constituida por un circuito integrado que interconecta una serie de chips, condensadores y conectores repartidos por toda ella, que en su conjunto forma el ordenador.</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6">
-            <img class="img-fluid" src="../Imagenes/paba.jpg" alt="">
-        </div>
-    </div>
-    <div class="ldiv"></div>
-    <div class="row mar">
-        <div class="col-12 col-md-6 col-lg-6">
-            <p class="parrafos-bsr"><b>Memoria RAM</b> La memoria RAM (Random Access Memory) es un componente interno que se instala en la placa base y sirve para cargar y almacenar todas las instrucciones que se ejecutan en el procesador. Estas instrucciones son enviadas desde todos los dispositivos conectados a la placa base y a los puertos de nuestro equipo.</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6">
-            <img class="img-fluid" src="../Imagenes/mer.jpg" alt="">
-        </div>
-    </div>
-    <div class="ldiv"></div>
+        <div class="lightbox">
+        <div class="row">
+            <div class="col-lg-6">
+            <div class="ldiv"></div>
+            <img
+                src="../Imagenes/esteticos1.jpg"
+                alt="Table Full of Spices"
+                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+            />
+            <img
+                src="../Imagenes/estetica2.jpg"
+                alt="Coconut with Strawberries"
+                class="w-100 h-89 mb-2 mb-md-4 shadow-1-strong rounded"
+            />
+            <div class="ldiv"></div>
+            </div>
+            <div class="col-lg-6">
+            <div class="ldiv"></div>
+            <img
+                src="../Imagenes/esteticos3.jpg"
+                data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                alt="Dark Roast Iced Coffee"
+                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+            />
+            <img
+                src="../Imagenes/estetica4.jpg"
+                alt="Coconut with Strawberries"
+                class="w-100 h-89 mb-2 mb-md-4 shadow-1-strong rounded"
+            />
+            <div class="ldiv"></div>
 @endsection

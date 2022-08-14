@@ -1,5 +1,5 @@
 @extends('log-viewer::bootstrap-4._master')
-
+@extends('plantilla2')
 @section('content')
     <div class="page-header mb-4">
         <h1>@lang('Dashboard')</h1>

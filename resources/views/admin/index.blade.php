@@ -15,7 +15,7 @@
 
 @section('section')
     <div class="container">
-        <center><h2>¿Que desea realizar?</h2></center>
+        <center><h2>¿Que desea realizar?</h2>
         <div class="card">
             <div class="card-header">
               Servicios
@@ -26,16 +26,16 @@
               <a href="{{route('servicios.create')}}" class="btn btn-success">Ir Agregar</a>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Actualizar un nuevo servicio</h5>
-              <p class="card-text">Aqui podremos Actualizar servicio para ofrecerlo a nuestros clientes</p>
-              <a href="edit" class="btn btn-warning">Ir Actualizar</a>
+              <h5 class="card-title">Administrar Reservaciones</h5>
+              <p class="card-text">Aqui podremos administrar las reservaciones de nuestros clientes</p>
+              <a  href="{{route('reservaciones.index')}}" class="btn btn-success">Administrar</a>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Eliminar un servicio</h5>
-              <p class="card-text">Aqui podremos eluminar un servicio ya no disponible para nuestros usuarios</p>
-              <a href="#" class="btn btn-danger">Ir A Eliminar</a>
+              <h5 class="card-title">Ver Errores del sistema</h5>
+              <p class="card-text">Aqui se va a poder visualizar los logs dentro del sitio</p>
+              <a  href="logs" class="btn btn-success">Ver problemas de sistema</a>
             </div>
+            </center>
         </div>  
     </div>
-    
 @endsection

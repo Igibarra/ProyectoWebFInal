@@ -63,18 +63,20 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <div class="g-recaptcha mt-3" data-sitekey="{{config('services.recaptcha.key')}}"></div>
+                                <center>
+                                <div class="g-recaptcha" data-sitekey="6Lcu0nIhAAAAABPGxdVgto1t8ts0HMyocaqnT3-n"></div>
+                                </center>
                                 @if (Session::has('g-recaptcha-response'))
                                     <p class="alert {{Session::get('alert-class', 'alert-info')}}" >
                                         {{Session::get('g-recaptcha-response')}}
                                     </p>
                                 @endif
                                 <br/>
-
+                                <center>
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Registrar') }}
                                 </button>
-                               
+                                </center>
                             </div>
                             
                         </div>

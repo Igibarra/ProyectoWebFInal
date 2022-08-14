@@ -1,3 +1,4 @@
+@extends('plantilla2')
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>

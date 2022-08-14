@@ -31,8 +31,8 @@ return [
     ],
 
     'recaptcha' => [
-        'key'=> env('GOOGLE_RECAPTCH_KEY'),
-        'secret' => env('GOOGLE_RECAPTCH_SECRET'),
+        'key'=> env('6Lcu0nIhAAAAABPGxdVgto1t8ts0HMyocaqnT3-n'),
+        'secret' => env('6Lcu0nIhAAAAAKmeI6xzMNxgk7n_JI8ThGyvCUGC'),
     ],
 
 ];

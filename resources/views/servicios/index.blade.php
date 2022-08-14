@@ -40,27 +40,19 @@
                       <p class="card-text">Costo: {{$itemservicios->Costo}}</p>
                       <p class="card-text">Encargado: {{$itemservicios->Encargado}}</p>
                       <p id="cel" class="card-text">Cel: {{$itemservicios->Contacto}}</p>
-                      
-                      
                         @if (Auth::check())
-								@if (Auth()->user()->role=='admin')
-								
+								@if (Auth()->user())
+
+								<center>
                                {{-- <form action="{{route('admin.destroy',$itemservicios->id )}}" class="mt-2"> --}}
-                                <a href="#" class="btn btn-primary">Solicitar Servicio</a>
-                                   @csrf
-                                   @method('delete')
-                                   
-                                   <button type="submit" class="btn btn-warning">Editar</button>
-                                    <button type="submit" class="btn btn-danger">Eliminar</button>
-                               </form> 
-                                
+                                <a href="{{route('reservaciones.create')}}" class="btn btn-primary">Solicitar Servicio</a>
 								@endif
+                                </center>
 					    @endif 
                     </div>
                   </div>
               </div>
-            @endforeach  
-         
+            @endforeach    
         </div>
     </div>
     <div class="bus-bs">
